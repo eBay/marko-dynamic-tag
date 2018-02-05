@@ -1,0 +1,9 @@
+<if((data.type === "renderer") || (data.type === "widgetWithoutId"))>
+    <invoke data.renderer({model: data.model, extra: data.extra}, out)/>
+</if>
+<else-if(data.type === "template")>
+    <include(data.template) model=data.model extra=data.extra/>
+</else-if>
+<else-if(data.type === "widgetWithId")>
+    <include("./widget.marko") renderer=data.renderer model=data.model extra=data.extra/>
+</else-if>

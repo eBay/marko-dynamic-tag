@@ -1,0 +1,31 @@
+{
+  "name": "marko-dynamic-tag",
+  "version": "0.0.0",
+  "description": "include marko components dynamically",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test": "nyc -x src/**/*.marko.js -x test/**/*.js --reporter=html mocha test/index.js",
+    "rep": "open coverage/index.html",
+    "all": "npm run lint && npm test && npm run rep"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eBay/marko-dynamic-tag.git"
+  },
+  "author": "Yoni Medoff",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cheerio": "^1.0.0-rc.1",
+    "eslint": "^4.15.0",
+    "eslint-config-ebay": "^0.1.9",
+    "marko": "^3.14.3",
+    "marko-widgets": "^6.6.6",
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1"
+  },
+  "dependencies": {
+    "try-require": "^1.2.1"
+  }
+}
