@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint src/**/*.js test/**/*.js",
     "test": "nyc -x src/**/*.marko.js -x test/**/*.js --reporter=html mocha test/index.js",
+    "build": "npm run lint && npm test",
     "rep": "open coverage/index.html",
     "all": "npm run lint && npm test && npm run rep"
   },
