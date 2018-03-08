@@ -42,7 +42,7 @@ An absolute path to the component root. For a component located at `src/componen
 ##### isWidget (optional, default: false)
 Set `widget` to `true` to invoke the component as a widget.
 
-##### widgetId (optional (default: '')
+##### widgetId (optional, default: '')
 If `widget` is set to `true`, this will be the ID that the widget is invoked with, using `w-id`.
 
 ### model
